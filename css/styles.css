@@ -15,17 +15,18 @@ body {
 
 h1,
 h2 {
-    color: #fff;
+    display: flex;
+    flex-direction: row
     text-transform: uppercase; 
-    text-align: center;
+    text-align: left;
 }
 
 p {
-    text-align: center;
+    text-align: left;
 }
 
 a {
-    color: #fff;
+    color: rgb(178,188,105)
     font-size: 1.2em;
     transition: background-color .3s, color .3s;
     text-decoration: none;
@@ -36,24 +37,9 @@ a:hover {
     color: #aaa;
 }
 
-ul {
-    padding-left: 0;
-}
-
-.item__background--red {
-    background-color: red;
-}
-
-.item__background--green {
-    background-color: green;
-}
-
-.item__background--blue {
-    background-color: blue;
-}
-
-.item__background--brown {
-    background-color: brown;
+.item {
+    display: flex;
+    flex-direction: row; 
 }
 
 @media screen and (max-width: 40rem) {
@@ -66,48 +52,32 @@ ul {
         flex-direction: column;
     }    
 }
-/* containers */
 
-/* container 1 */
-.container1 {
-    padding: 4vh 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-.container1__item {
-    flex-basis: 30%;
+.arrowgreen {
+    background-color:rgb(13,47,23);
+    color:rgb(178, 188, 105);
 }
 
-
-
-/* container 2 */
-.container2 {
-    padding: 4vh 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-.container2__item {
-    flex-basis: 20%;
+.flashred{
+    background-color:rgb(85,00,00);
 }
 
+.supergirlblue{
+    background-color: darkblue
+}
 
+.legendsbackground{
+    background-color:darkslateblue;
+}
 
-/* container 3 */
-.container3 {
-    min-height: 30vh;
-    padding: 4vh 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+.batwomenbackground{
+    background-color: black
 }
-#container3__item1 {
-    flex: 1;
+
+.crossovertextcolor{
+    color:yellow
 }
-#container3__item2 {
-    flex: 4;
-}
-#container3__item3 {
-    flex: 1;
+
+.supergirlheading{
+    color:deepskyblue 
 }
