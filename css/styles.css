@@ -16,7 +16,7 @@ body {
 h1,
 h2 {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
     text-transform: uppercase; 
     text-align: left;
 }
@@ -26,8 +26,7 @@ p {
 }
 
 a {
-    color: rgb(178,188,105)
-    font-size: 1.2em;
+    color: rgb(178,188,105);
     transition: background-color .3s, color .3s;
     text-decoration: none;
     text-transform: uppercase; 
@@ -39,7 +38,8 @@ a:hover {
 
 .item {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    align-content: center
 }
 
 @media screen and (max-width: 40rem) {
